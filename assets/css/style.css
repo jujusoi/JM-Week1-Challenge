@@ -1,138 +1,153 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* { /* targets all elements in html page */
+    box-sizing: border-box; /* width + height matches border box of elements */
+    padding: 0; /* no padding */
+    margin: 0; /* no margin */
 }
 
-body {
-    background-color: #d9dcd6;
+body { /* targets body element */
+    background-color: #d9dcd6; /* background color body = white */
 }
 
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+.header { /* targets .header class */
+    padding: 20px; /* space between any element within class selector and border +20px on each side */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* changes font family
+    to trebuchet, then lucida, arial, and sans for backup fonts just in case they aren't rendered correctly */
+    background-color: #2a607c; /* changes background color of .header class (where navigation div is) */
+    color: #ffffff; /* swaps out text color to white */
 }
 
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
+.header h1 { /* targets h1 inside of .header class */
+    display: inline-block; /* sets display to inline-block, can sit next to other elements whilst allowing size change */
+    font-size: 48px; /* modifies fontsize of h1 to 48px */
 }
 
-.header h1 .seo {
-    color: #d9dcd6;
+.header h1 .seo { /* targets class .seo inside the h1 found within the .header class */
+    color: #d9dcd6; /* text color white grey, creates company logo color effect */
 }
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+.header div { /* targets all div elements within .header class */
+    padding-top: 15px; /* spaces out the divs away from the top. (gives the anchors some space on the top banner) */
+    margin-right: 20px; /* moves div further to the left, allowing a little bit of space between the anchors on the right side of the page.  */
+    float: right; /* moves divs to the right */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* changes font to gill sans & others for precaution */
+    font-size: 20px; /* changes size of the anchors within the div to 20px */
 }
 
-.header div ul {
-    list-style-type: none;
+.header div ul { /* selects the unordered list found within the div inside the header class */
+    list-style-type: none; /* removes the dots from the list items */
 }
 
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
+.header div ul li { /* targets the list items, found in the ul of the .header class div */
+    display: inline-block; /*displays the list item elements as inline block, allowing them to be stacked next to each other whilst
+    not taking up a new line */
+    margin-left: 25px; /* adds space between the list item elements. prevents clutter */
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
+a { /* targets all anchor elements in page */
+    color: #ffffff; /* changes text color of any anchor element in the document to be white */
+    text-decoration: none; /* removes any underline or text deco found within the anchors of the doc */
 }
 
-p {
-    font-size: 16px;
+p { /* targets all paragraph elements in page */
+    font-size: 16px; /* changes font size of paragraphs to 16px, smaller than header div and h1 fs */
 }
 
-.hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+.hero { /* targets hero class, found within a div above main content */
+    height: 800px; /* makes the height of the div 800px */
+    width: 100%; /* makes width of div 100% of the body element (thus 100% of the user's viewport */
+    margin-bottom: 25px; /* adds a small space between the hero image and the main content */
+    background-image: url("../images/digital-marketing-meeting.jpg"); /* assigns a background image to the div, so all space
+    that it occupies will be an image instead of a frame */
+    background-size: cover; /* sets the image size to cover, other options allow the image to be repeated, stretched, tiled, etc.
+    but here, it will cover all the space of the div */
+    background-position: center; /* positions the background to the center of the page */
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
+.float-left { /* targets class .float-left, given to main content images for positioning purposes */
+    float: left; /* moves class items (images) to the left of the page */
+    margin-right: 25px; /* spaces the class image elements out from the main content on the right */
 }
 
-.float-right {
-    float: right;
-    margin-left: 25px;
+.float-right { /* like .float-left, but targets a single image used for positioning purposes. */
+    float: right; /* moves class item to the right of the page */
+    margin-left: 25px; /* spaces class image element from the main content on the left */
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+.content { /* targets the .content class, assigned in a section semantic */
+    width: 75%; /* makes the content class section take up 75% of the body element */
+    display: inline-block; /* positions items (divs) in inline block, so that only one div can take up a line whilst allowing 
+    for width/height modifications */
+    margin-left: 20px; /* provides a small gap of space between .content divs and the left border of the page */
 }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-
-.benefit-brand, .benefit-cost, .benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-
-.benefit-brand h3, .benefit-cost h3, .benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
+.benefits { /* targets the .benefit class, found in another section semantic. found in the page as the vertical element on the right
+    of the .content class */
+    margin-right: 20px; /*provides small gap of space between .benefits divs and right border of page */
+    padding: 20px; /* increases space between element border and content. evenly spaces content on all sides of the section */
+    clear: both; /* allows both sides of the section box to be adjacent to another */
+    float: right; /* positions the section and its contents to the right of the page. without this, the element will sit below the main content */
+    width: 20%; /* increases width of the section to be 20% of the body element. along with the main .content, this makes up
+    95% of the body element, with 5% left over for spacing */
+    height: 100%; /* increases height of section to be 100% of the body element. */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* assigns font families w/ backups */
+    background-color: #2589bd; /* changes background color of the section to blue. */
 }
 
 
-.benefit-lead img, .benefit-cost img, .benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+.benefit-brand, .benefit-cost, .benefit-lead { /* selects the .benefit-brand, .benefit-cost, & .benefit-lead elements all at once.
+    this was done because they all shared the same property values. each is a class representing a different div element
+    within the .benefits section class element */
+    margin-bottom: 32px; /* spaces out each element from the top of one another. provides better functionality */ 
+    color: #ffffff; /* changes text color of all elements within each class to be white */
 }
 
 
-.search-engine-optimization, .online-reputation-management, .social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+.benefit-brand h3, .benefit-cost h3, .benefit-lead h3 { /* selects the h3 elements within each class from above. */
+    margin-bottom: 10px; /* increases the distance between the h3 and image element by 10px */
+    text-align: center; /* centers all h3s to the middle of the divs */
 }
 
 
-.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
-    max-height: 200px;
+.benefit-lead img, .benefit-cost img, .benefit-brand img { /* selects the image elements within each class from above. */
+    display: block; /* positions the images in a block to ensure they stay solidified on their lines */
+    margin: 10px auto; /* increases distance of margin from top and bottom of the images. sets margin left-right to auto (position 
+    it center) */
+    max-width: 150px; /* sets max width so it can't grow too large, especially on larger viewports */
 }
 
-.search-engine-optimization h2, .social-media-marketing h2, .online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+
+.search-engine-optimization, .online-reputation-management, .social-media-marketing { /* selects the reputation classes found within
+    the main content divs. all share same property values. each class represents a different div element */
+    margin-bottom: 20px; /* spaces out the divs from eachother from the bottom of their boxes. */
+    padding: 50px; /* assigns the space between the box and its contents to 50px so they fit snugly inside */
+    height: 300px; /* makes height of each div class 300px. */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* assigns font family & backups */
+    background-color: #0072bb; /* changes background color of main div content to a blue. this blue is a bit darker than the 
+    benefits div bg color */
+    color: #ffffff; /* assigns all text color within the class elements to be white */
 }
 
 
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img { /* selects all image elements within
+    the classes from above, since they all shared the same height value */
+    max-height: 200px; /* locks the images to be 200px tall max. prevents further scaling so the images don't look too large. */
 }
 
-.footer h2 {
-    font-size: 20px;
+.search-engine-optimization h2, .social-media-marketing h2, .online-reputation-management h2 { /* selects all h2 elements within the 
+    classes from above, since they all share the same property values */
+    margin-bottom: 20px; /* creates space between the h2s and elements below it. provides better functionality. */
+    font-size: 36px; /* increases font size of the h2s */
+}
+
+
+.footer { /* selects the footer class, a div found within a footer semantic */
+    padding: 30px; /* adds padding on all sides of the div, ensuring the content doesn't leak out of the assigned box */
+    clear: both; /* in case the main content divs breach under, this will ensure that the footer stays on a separate line */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* assigns font family
+    and backups */
+    text-align: center; /* centers all text within the footer div */
+}
+
+.footer h2 { /* selects the h2 found within the footer class from above */
+    font-size: 20px; /* makes font size of the h2 to be 20px */
 }
